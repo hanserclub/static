@@ -1,0 +1,37 @@
+{
+    "name": "毛怪俱乐部",
+    "short_name": "毛怪俱乐部",
+    "theme_color": "#ffb769",
+    "background_color": "#fdedd3",
+    "description": "欢迎来到毛怪俱乐部",
+    "display": "standalone",
+    "display_override": ["minimal-ui", "standalone", "fullscreen"],
+    "start_url": "/",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "https://cdn.ihan.club/logo/logo-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https://cdn.ihan.club/logo/logo-maskable-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "https://cdn.ihan.club/logo/logo-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https://cdn.ihan.club/logo/logo-maskable-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
