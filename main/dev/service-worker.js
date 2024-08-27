@@ -21,6 +21,16 @@ self.addEventListener('fetch', (e) => {
             })
         );
     }
+    const thirdPictureDomain = ['gitee.com', 'raw.githubusercontent.com', 'i0.hdslb.com', 'img-blog.csdnimg.cn', 'img2.baidu.com'];
+    if (thirdPictureDomain.find((item) => sourceUrl.includes(item))) {
+        e.respondWith(
+            fetch(sourceUrl, {
+                referrerPolicy: 'no-referrer'
+            }).then((response) => {
+                return response;
+            })
+        );
+    }
 });
 
 // 创建或链接数据库
