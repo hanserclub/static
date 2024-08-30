@@ -21,7 +21,7 @@ self.addEventListener('fetch', (e) => {
             })
         );
     }
-    const thirdPictureDomain = ['gitee.com', 'raw.githubusercontent.com', 'i0.hdslb.com', 'img-blog.csdnimg.cn', 'img2.baidu.com'];
+    const thirdPictureDomain = ['hdslb.com', 'img-blog.csdnimg.cn', 'baidu.com', 'sns-webpic-qc.xhscdn.com', 'tiebapic.baidu.com', 'zhimg.com'];
     if (thirdPictureDomain.find((item) => sourceUrl.includes(item))) {
         e.respondWith(
             fetch(sourceUrl, {
